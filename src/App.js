@@ -27,13 +27,13 @@ const deleteTodo = (id) => {
 return (
   <div className="App">
     <h1>To-Do List</h1>
-    <input
+    <input className='input'
       type="text"
       value={text}
       onChange={(e) => setText(e.target.value)}
       placeholder="Add a new task"
     />
-  <button onClick={addTodo}>Add</button>
+  <button className='button' onClick={addTodo}>+</button>
   <ul>
     {todos.map(todo => (
       <li key={todo._id}>
